@@ -88,7 +88,7 @@
         ?>
         <?php if(get_option('show_help_on_setup_menu') == 1 && is_admin()){ $total_setup_items++; ?>
         <li>
-            <a href="http://perfexcrm.com/documentations" target="_blank"><?php echo _l('setup_help'); ?></a>
+            <a href="https://www.mastersec.net/documentations" target="_blank"><?php echo _l('setup_help'); ?></a>
         </li>
         <?php } ?>
     </ul>
