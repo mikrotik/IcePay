@@ -45,7 +45,7 @@ class Basicoperations extends Gateway_controller
 
         // Check if memberGuid has valid format
         if (!UUID::is_valid($this->_request['memberGuid'])){
-            $this->_api->process(array(),424,511,424,true,$this->_content_type);
+            $this->_api->process(array(),511,511,511,true,$this->_content_type);
         }
 
     }
