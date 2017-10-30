@@ -129,6 +129,10 @@ class Rest
             505 => 'HTTP Version Not Supported',
             510 => 'Request validation error',
         );
+
+        if ($code){
+            return ($status[$code]) ? $status[$code] : $status[90];
+        }
         return ($status[$this->_code]) ? $status[$this->_code] : $status[90];
     }
 }
