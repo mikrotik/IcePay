@@ -17,7 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 
-define('APP_BASE_URL','');
+define('APP_BASE_URL','https://testprocessor.mastersec.net/');
 
 /*
 |--------------------------------------------------------------------------
@@ -33,18 +33,18 @@ define('APP_BASE_URL','');
 | Auto updated added on install
 */
 
-define('APP_ENC_KEY','');
+define('APP_ENC_KEY','a710f60fa5ad1c14f9267f11bbe9ae6d');
 
 /* Database credentials - Auto added on install */
 
 /* The hostname of your database server. */
 define('APP_DB_HOSTNAME','localhost');
 /* The username used to connect to the database */
-define('APP_DB_USERNAME','');
+define('APP_DB_USERNAME','root');
 /* The password used to connect to the database */
-define('APP_DB_PASSWORD','');
+define('APP_DB_PASSWORD','ipower');
 /* The name of the database you want to connect to */
-define('APP_DB_NAME','');
+define('APP_DB_NAME','bin_switch');
 
 /* Session Handler */
 
