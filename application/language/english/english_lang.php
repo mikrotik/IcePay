@@ -228,6 +228,9 @@ $lang['invoice_item_add_edit_tax_select']  = 'Select Tax';
 $lang['invoice_item_edit_heading'] = 'Edit Item';
 $lang['invoice_item_add_heading']  = 'Add New Item';
 
+# Processors
+$lang['create_new_processor']             = 'Create New Processor';
+
 # Invoices
 
 
