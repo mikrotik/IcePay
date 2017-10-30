@@ -82,3 +82,6 @@ $route['knowledge_base/(:any)']  = "clients/knowledge_base/$1";
 $route['knowledge-base']  = "clients/knowledge_base";
 $route['knowledge-base/(:any)']  = "clients/knowledge_base/$1";
 
+/* API */
+$route['gateway/v2/basicoperations/(:any)']  = "gateway/v2/basicoperations/init/$1";
+

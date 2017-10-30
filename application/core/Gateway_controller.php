@@ -7,6 +7,5 @@ abstract class Gateway_controller extends CRM_Controller
     function __construct()
     {
         parent::__construct();
-
     }
 }

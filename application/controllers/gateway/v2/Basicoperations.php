@@ -10,6 +10,6 @@ class Basicoperations extends Gateway_controller
 
     public function init()
     {
-
+        echo __METHOD__;
     }
 }
