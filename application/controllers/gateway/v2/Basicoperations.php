@@ -34,13 +34,18 @@ class Basicoperations extends Gateway_controller
         // if it is not valid XML...
         if (!$xml) {
 
-            $this->_api->process(array(),412,412,true,$this->_format);
+            $this->_api->process(array(),412,null,412,true,$this->_content_type);
 
         } else {
 
             // Make an array out of the XML
             $this->_request = $this->arraytoxml->toArray($xml);
 
+        }
+
+        // Check if memberGuid has valid format
+        if (!UUID::is_valid($this->_request['memberGuid'])){
+            $this->_api->process(array(),424,null,424,true,$this->_content_type);
         }
 
     }
