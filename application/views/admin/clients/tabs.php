@@ -9,12 +9,20 @@ $customer_tabs = array(
     'order'=>1
     ),
   array(
+      'name'=>'processors',
+      'url'=>admin_url('clients/client/'.$client->userid.'?group=processors'),
+      'icon'=>'fa fa-exchange',
+      'lang'=>_l('client_processors_tab'),
+      'visible'=>(has_permission('processors','','view') || has_permission('processors','','view_own')),
+      'order'=>2
+  ),
+  array(
     'name'=>'invoices',
     'url'=>admin_url('clients/client/'.$client->userid.'?group=invoices'),
     'icon'=>'fa fa-file-text',
     'lang'=>_l('client_invoices_tab'),
     'visible'=>(has_permission('invoices','','view') || has_permission('invoices','','view_own')),
-    'order'=>2
+    'order'=>3
     ),
   array(
     'name'=>'payments',
@@ -22,7 +30,7 @@ $customer_tabs = array(
     'icon'=>'fa fa-line-chart',
     'lang'=>_l('client_payments_tab'),
     'visible'=>(has_permission('payments','','view') || has_permission('invoices','','view_own')),
-    'order'=>3
+    'order'=>4
     ),
   array(
     'name'=>'proposals',
@@ -30,7 +38,7 @@ $customer_tabs = array(
     'icon'=>'fa fa-file-text-o',
     'lang'=>_l('proposals'),
     'visible'=>(has_permission('proposals','','view') || has_permission('proposals','','view_own')),
-    'order'=>4
+    'order'=>5
     ),
   array(
     'name'=>'estimates',
@@ -38,7 +46,7 @@ $customer_tabs = array(
     'icon'=>'fa fa-file-text-o',
     'lang'=>_l('estimates'),
     'visible'=>(has_permission('estimates','','view') || has_permission('estimates','','view_own')),
-    'order'=>5
+    'order'=>6
     ),
   array(
     'name'=>'expenses',
@@ -46,7 +54,7 @@ $customer_tabs = array(
     'icon'=>'fa fa-heartbeat',
     'lang'=>_l('expenses'),
     'visible'=>(has_permission('expenses','','view') || has_permission('expenses','','view_own')),
-    'order'=>6
+    'order'=>7
     ),
   array(
     'name'=>'contracts',
@@ -54,7 +62,7 @@ $customer_tabs = array(
     'icon'=>'fa fa-file',
     'lang'=>_l('contracts'),
     'visible'=>(has_permission('contracts','','view') || has_permission('contracts','','view_own')),
-    'order'=>7
+    'order'=>8
     ),
   array(
     'name'=>'projects',
@@ -62,7 +70,7 @@ $customer_tabs = array(
     'icon'=>'fa fa-bars',
     'lang'=>_l('projects'),
     'visible'=>true,
-    'order'=>8
+    'order'=>9
     ),
   array(
     'name'=>'tickets',
@@ -70,7 +78,7 @@ $customer_tabs = array(
     'icon'=>'fa fa-ticket',
     'lang'=>_l('tickets'),
     'visible'=>((get_option('access_tickets_to_none_staff_members') == 1 && !is_staff_member()) || is_staff_member()),
-    'order'=>9
+    'order'=>10
     ),
   array(
     'name'=>'tasks',
@@ -78,7 +86,7 @@ $customer_tabs = array(
     'icon'=>'fa fa-tasks',
     'lang'=>_l('tasks'),
     'visible'=>true,
-    'order'=>10
+    'order'=>11
     ),
   array(
     'name'=>'attachments',
@@ -86,7 +94,7 @@ $customer_tabs = array(
     'icon'=>'fa fa-paperclip',
     'lang'=>_l('customer_attachments'),
     'visible'=>true,
-    'order'=>11
+    'order'=>12
     ),
   array(
     'name'=>'reminders',
@@ -94,7 +102,7 @@ $customer_tabs = array(
     'icon'=>'fa fa-clock-o',
     'lang'=>_l('client_reminders_tab'),
     'visible'=>true,
-    'order'=>12
+    'order'=>13
     ),
   array(
     'name'=>'map',
@@ -102,7 +110,7 @@ $customer_tabs = array(
     'icon'=>'fa fa-map-marker',
     'lang'=>_l('customer_map'),
     'visible'=>true,
-    'order'=>13
+    'order'=>14
     ),
   array(
     'name'=>'notes',
@@ -110,7 +118,7 @@ $customer_tabs = array(
     'icon'=>'fa fa-sticky-note-o',
     'lang'=>_l('contracts_notes_tab'),
     'visible'=>true,
-    'order'=>14
+    'order'=>15
     ),
   );
 
