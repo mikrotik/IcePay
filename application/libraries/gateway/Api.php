@@ -39,11 +39,11 @@ class Api extends Rest
                 $error['Reason'] = $this->get_rest_status_message($internal);
             } else {
                 $error['Reason'] = $data['Processor']['ErrorMessage'];
+                $error['TrackingMemberCode'] = 'Test 5555-6666-7777-8888';
+                $error['TransactionId'] = UUID::trxid(8);
+                $error['TransactionGuid'] = UUID::v5('1546058f-5a25-4334-85ae-e68f2a44bbaf', UUID::trxid(8));
+                $error['TransactionDateTime'] = $this->_objDateTime->format(DateTime::ISO8601);
             }
-            $error['TrackingMemberCode'] = 'Test 5555-6666-7777-8888';
-            $error['TransactionId'] = UUID::trxid(8);
-            $error['TransactionGuid'] = UUID::v5('1546058f-5a25-4334-85ae-e68f2a44bbaf', UUID::trxid(8));
-            $error['TransactionDateTime'] = $this->_objDateTime->format(DateTime::ISO8601);
 
             $this->response($this->$contentType($error), $status);
         }
