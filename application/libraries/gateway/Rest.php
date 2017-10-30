@@ -80,7 +80,7 @@ class Rest
         header("Content-Type:" . $this->_content_type);
     }
 
-    public function get_rest_status_message() {
+    public function get_rest_status_message($code = null) {
 
         $status = array(
             0=>'Transaction approved',
