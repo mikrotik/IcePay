@@ -24,5 +24,12 @@ class Basicoperations extends Gateway_controller
             $this->_api->process(array(),406,406,true,$this->_content_type);
 
         }
+
+        $this->Charge();
+    }
+
+    public function Charge()
+    {
+        $this->_api->process(array(), 200, 0, false, $this->_content_type);
     }
 }
