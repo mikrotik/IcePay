@@ -58,7 +58,7 @@ $autoload['packages'] = array();
 |
 |   $autoload['libraries'] = array('user_agent' => 'ua');
 */
-$autoload['libraries'] = array( 'user_agent', 'encryption','email', 'encoding_lib', 'action_hooks', 'perfex_base' );
+$autoload['libraries'] = array( 'user_agent', 'encryption','email', 'encoding_lib', 'action_hooks', 'perfex_base','session' );
 $CI = &get_instance();
 
 array_unshift($autoload['libraries'],'database');
@@ -114,6 +114,7 @@ $autoload['helper'] = array(
         'perfex_themes',
         'perfex_theme_style',
         'perfex_constants',
+        'perfex_utf8'
     );
 
 if(file_exists(APPPATH.'helpers/my_functions_helper.php')){
