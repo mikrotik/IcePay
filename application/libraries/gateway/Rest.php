@@ -128,6 +128,7 @@ class Rest
             504 => 'Gateway Timeout',
             505 => 'HTTP Version Not Supported',
             510 => 'Request validation error',
+            511 => 'Authentication Failed'
         );
 
         if ($code){
