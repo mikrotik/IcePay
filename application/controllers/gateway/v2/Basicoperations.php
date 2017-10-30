@@ -32,4 +32,24 @@ class Basicoperations extends Gateway_controller
     {
         $this->_api->process(array(), 200,null,0, false, $this->_content_type);
     }
+
+    public function Authorize()
+    {
+        $this->_api->process(array(), 200,null,0, false, $this->_content_type);
+    }
+
+    public function Refund()
+    {
+        $this->_api->process(array(), 200,null,0, false, $this->_content_type);
+    }
+
+    public function Capture()
+    {
+        $this->_api->process(array(), 200,null,0, false, $this->_content_type);
+    }
+
+    public function Void()
+    {
+        $this->_api->process(array(), 200,null,0, false, $this->_content_type);
+    }
 }
