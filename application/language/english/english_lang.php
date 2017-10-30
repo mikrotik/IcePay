@@ -82,6 +82,7 @@ $lang['client_password']                       = 'Password';
 $lang['client_password_change_populate_note']  = 'Note: if you populate this fields, password will be changed on this contact.';
 $lang['client_password_last_changed']          = 'Password last changed:';
 $lang['login_as_client']                       = 'Login as client';
+$lang['client_processors_tab']                   = 'Processors';
 $lang['client_invoices_tab']                   = 'Invoices';
 $lang['contracts_invoices_tab']                = 'Contracts';
 $lang['contracts_tickets_tab']                 = 'Tickets';
