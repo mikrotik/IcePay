@@ -13,11 +13,12 @@ class Basicoperations extends Gateway_controller
     {
         parent::__construct();
 
-        print_r($this->uri->segment);
     }
 
     public function init()
     {
+
+        print_r($this->uri->segment);
 
         // Check if method is exist
         if (!method_exists($this,$this->uri->segment(4))){
