@@ -25,7 +25,24 @@ class Basicoperations extends Gateway_controller
 
         }
 
-        $this->Charge();
+        // grab the request
+        $request = trim(file_get_contents('php://input'));
+
+        // find out if the request is valid XML
+        $xml = @simplexml_load_string($request);
+
+        // if it is not valid XML...
+        if (!$xml) {
+
+            $this->_api->process(array(),412,412,true,$this->_format);
+
+        } else {
+
+            // Make an array out of the XML
+            $this->_request = $this->arraytoxml->toArray($xml);
+
+        }
+
     }
 
     public function Charge()
