@@ -23,7 +23,7 @@ class Api extends Rest
         $this->setCode($code);
         $this->setContentType($contentType);
 
-        if ($hasError == false && $data['ResultState'] == true) {
+        if ($hasError == false) {
             $output['Result'] = $code;
             $output['Message'] = $this->get_rest_status_message();
             $output['TrackingMemberCode'] = 'Test 1111-2222-3333-4444';
