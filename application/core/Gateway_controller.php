@@ -22,7 +22,6 @@ abstract class Gateway_controller extends CRM_Controller
         $this->_api = new Api();
 
         $this->load->helper('perfex_xml_value_prep');
-        $this->load->helper('gateway/api');
         $this->load->helper('perfex_uuid');
 
         if (isset($content_type)){
