@@ -34,7 +34,7 @@ class Basicoperations extends Gateway_controller
         // if it is not valid XML...
         if (!$xml) {
 
-            $this->_api->process(array(),412,null,412,true,$this->_content_type);
+            $this->_api->process(array(),412,417,412,true,$this->_content_type);
 
         } else {
 
